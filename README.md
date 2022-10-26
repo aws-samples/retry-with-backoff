@@ -1,11 +1,14 @@
 ## My Project
 
-TODO: Fill this README out!
+### Intent
 
-Be sure to:
+Retry pattern improves application stability by transparently retrying operations that fail due to transient errors. 
 
-* Change the title in this README
-* Edit your repository description on GitHub
+### Motivation
+
+In distributed architectures, transient errors may be caused due to service throttling, temporary loss of network connectivity and temporary service unavailability. When the application automatically retries the operations that fail transparently, it improves the user experience and application resilience.  However, frequent retries can overload the network bandwidth resulting in contention. Exponential backoff can be used where retries are done with increasing wait times for a specified number of retry attempts. 
+
+
 
 ## Security
 
